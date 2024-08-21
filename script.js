@@ -181,7 +181,7 @@ function predictWebcam() {
         }
 
         const currentTime = Date.now();
-        if (detectedObjects && currentTime - lastDetectionTime > 1000) {
+        if (detectedObjects && currentTime - lastDetectionTime > 50) {
             playSignalTone();
             lastDetectionTime = currentTime;
         }
